@@ -1,48 +1,71 @@
 // EXERCISE 1: Change Background
 // Change the background color of '#target' by script. 
 
-
+// $("#target").css("background-color","red");
 // EXERCISE 2: Change Parent
 // Change the text in the span, a child of "#target"
 
-
+// $('#target span').text('a child of "#target"');
 
 
 // EXERCISE 3: Create Clone
 // Create a clone of the span in "#target" and position it under the origin.
 
+// $(document).ready(function(){
+// $("span").clone().insertAfter( "span" ).css({
+// position:"absolute",
+// left:-20,
+// margin:80,
+
+// }) })
+
+
+
 
 // EXERCISE 4: Use Filter
 // Change background color of the second ".target"
+// $( "div" ).filter( ":odd" ).css( "background-color", "red" );
 
 
 
 // EXERCISE 5: Disable Buttons
 // Disable the button
 
+// $("button").attr("disabled","disabled")
+
+
 // EXERCISE 6: Uncheck CheckBoxes
 // Uncheck all checkboxes using jQuery
-
-
+// $(document).ready(function(){
+//     $('input').removeAttr("checked");});
 
 // EXERCISE 7: Change Parent
 // Move "#child" from "#parent1" to "#parent2"
 
-
-
+//    $("#child").appendTo('#parent2');
+   
 // EXERCISE 8: Select A Option in A Select Box
 // Select the second option in the selectbox by script
 
-
+// $(document).ready(function(){
+//     $("option").eq(1).attr("selected","true")
+    
+// })
 
 // EXERCISE 9: Change Size
-// Make "#target" double size
-
-
-
+// Make "#target" double s$( "div" ). function() {
+//     $(document).ready(function(){
+//     var height = $("#target").height();
+//     var width = $("#target").width();
+        
+// $("#target").width(width*2);
+// $("#target").height(height*2);
+//     });
 
 // EXERCISE 10: Empty Elements
 // Remove all children and text of "#target"
+// $(document).ready(function(){
+// $("#target").empty();});
 
 
 // Advanced part
